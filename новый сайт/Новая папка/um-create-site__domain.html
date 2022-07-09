@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <!-- <link rel="stylesheet" href="css/um-style/um-product.css"> -->
+    <link rel="stylesheet" href="css/um-style/um-cms.css">
+</head>
+<body>
+    <div class="um-create-site">
+
+        <h3 class="um-create-site__title">Создать сайт</h3>
+
+        <div class="um-create-site__wrapp">
+            <!-- Меню Создать сайт -->
+            <div class="um-menu-create-site">
+                <ul class="um-menu-create-site__list">
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Мой сайт</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link um-menu-create-site__link--active" href="#">Главное</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Домен</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Контакты</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Стиль</a></li>
+                </ul>
+            </div>
+
+            <div class="um-content-create-site">
+        
+                <div class="um-domain-create-site">
+                    <form class="um-domain-create-site__form" action="#">
+                        <label class="um-form-create-site__label">
+                            <span class="um-form-create-site__text">Подключить свой домен<span class="um-form-create-site__asterisk">&#42;</span></span>
+                            <input class="um-form-create-site__input" type="text" placeholder="http://unitedmarket.org">
+                        </label>
+                        <button class="um-form-create-site__btn um-button-create-site" type="submit" >Cохранить</button>
+                    </form>
+
+                    <ul class="um-domain-create-site__info-list">
+                        <li class="um-domain-create-site__info-item">Домен подключен корректно, DNS записи настроены верно. IP фдрес: 185.215.4.15.</li>
+                        <li class="um-domain-create-site__info-item">SSL сертификат выпущен. Сайт открывается по защищенному протоколу HTTPS</li>
+                        <li class="um-domain-create-site__info-item">Сайт защищен от DDoS-атак</li>
+                    </ul>
+
+
+                    <p class="um-domain-create-site__text">Домен — это адрес сайта, по которому сайт можно найти в сети. Если вы хотите подключить собственный домен (то есть чтобы сайт открывался по адресу вида http://mysite.com), нужно сделать 3 шага:</p>
+                    
+                    <ul class="um-domain-create-site__list">
+                        <li class="um-domain-create-site__item um-domain-create-site__item--arrow">
+                            <span>1</span>
+                            <h3>Купить домен</h3>
+                            <p>Купить домен можно у регистраторов доменов. По запросу «купить домен»  можно легко найти их в поисковиках в интренете.</p>
+                        </li>
+                        <li class="um-domain-create-site__item um-domain-create-site__item--arrow">
+                            <span>2</span>
+                            <h3>Указать домен в настройках сайта</h3>
+                            <p>Внесите свой домен в поле «Подключить свой домен» и нажмите сохранить. Система подскажет вам оптимальный для вашего сайта IP-адрес А-записей, которые нужно установить на стороне регистратора</p>
+                        </li>
+                        <li class="um-domain-create-site__item">
+                            <span>3</span>
+                            <h3>На сайте регистратора указать записи для домена</h3>
+                            <p>Для этого в зоне управления DNS нужно добавить запись A и прописать для нее значение IP адреса из Настроек сайта → Домен</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div> 
+
+    </div> 
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <link rel="stylesheet" href="css/um-style/um-menu-style.css">
+</head>
+<body>
+    <button class="um-button-menu">
+        <span class="visually-hidden">Кнопка меню</span>
+        <span class="um-button-menu__icon"></span>
+    </button>
+    <ul class="um-menu um-menu--active">
+        <li class="um-menu__item"><a class="um-menu__link" href="#"><i class="icon-um-user"></i>Профиль</a></li>
+        <li class="um-menu__item"><a class="um-menu__link um-menu__link-active" href="#">Товары (Услуги)<i class="icon-um-arrow"></i></a></li>
+        <ul class="um-menu__services-goods">
+            <li class="um-menu__item"><a class="um-menu__link" href="#">Товары</a></li>  
+            <li class="um-menu__item"><a class="um-menu__link" href="#">Услуги</a></li>
+        </ul>
+        <li class="um-menu__item"><a class="um-menu__link" href="#">Настройка профиля</a></li>
+        <li class="um-menu__item"><a class="um-menu__link" href="#">Уведомления</a></li>
+        <li class="um-menu__item"><a class="um-menu__link" href="#">Заказы</a></li>
+        <li class="um-menu__item"><a class="um-menu__link" href="#">Кошелёк</a></li>
+        <li class="um-menu__item"><a class="um-menu__link" href="#">Создать сайт</a></li>
+        <li class="um-menu__item"><a class="um-menu__link" href="#">Склад</a></li>
+        <li class="um-menu__item"><a class="um-menu__link" href="#"><i class="icon-um-exit"></i>Выйти</a></li>
+    </ul>
+    <script src="js/um-js/um-menu.js"></script>
+</body>
+</html>

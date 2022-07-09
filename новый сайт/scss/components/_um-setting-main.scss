@@ -1,0 +1,105 @@
+.um-content-create-site {
+    max-width: 1019px;
+    min-width: 320px;
+    width: 100%;
+}
+
+.um-setting-block-create-site {
+    position: relative;
+    max-width: 1019px;
+    min-width: 320px;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 52px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 20px rgba(161, 166, 185, 0.15);
+    border-radius: 12px;
+    &__title {
+        margin-bottom: 31px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #0B1331;
+    }
+    &__title-block {
+        font-weight: 700;
+        font-size: 24px; 
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #BFC6E0;
+    }
+    &__btn-wrap {
+        position: absolute;
+        top: 24px;
+        right: 47px;
+    }
+    &__block {
+        margin-bottom: 20px;
+    }
+    &__text-mb {
+        display: block;
+        margin-bottom: 23px;
+    }
+
+    &__preview-list {
+        display: flex;
+        img {
+            box-shadow: 10px 10px 20px rgba(161, 166, 185, 0.15);
+        }
+    }
+    &__preview-item {
+        margin-right: 10px;
+    } 
+}
+
+.um-catalog-create-site {
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    &__item {
+        margin-right: 19px;
+    }
+}
+
+.um-paginator-create-site {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 60px;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 25px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.03em;
+        color: #696969
+    }
+    &__link--active {
+        background-color: #696969;
+        color: #fff;
+        border-radius: 50px;
+
+    }
+}
+
+@media (min-width: $screen-table) {
+    .um-setting-block-create-site {
+        padding-top: 24px;
+    }
+}

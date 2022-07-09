@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/um-style/air-datepicker.css">
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <!-- подключение стиля блока -->
+    <link rel="stylesheet" href="css/um-style/um-uved-tabs.css">
+</head>
+<body>
+    <div class="um-uved-tabs">
+        <h3 class="visually-hidden">Профиль уведомления - напоминания</h3>
+
+        <ul class="um-uved-tabs__list">
+            <li class="um-uved-tabs__item"><button class="um-uved-tabs__tab-btn um-uved-tab-btn--active" data-tabs-path="notifications">Уведомления (10)</button></li>
+            <li class="um-uved-tabs__item"><button class="um-uved-tabs__tab-btn " data-tabs-path="reminders">Напомнинания</button></li>
+        </ul>
+
+        <ul class="um-uved-tabs__content um-content-notifications um-uved-tabs--active um-uved-tabs__um-content-notifications" data-tabs-target="notifications">
+            <li class="um-content-notifications__title">Уведомления (10)</li>
+            <li class="um-content-notifications__item">
+                <i class="icon-um-mail"></i>
+                <span>Заканчивается срок использования промокода</span>
+                <span>12.06.2020</span>
+            </li>
+            <li class="um-content-notifications__item">
+                <i class="icon-um-mail"></i>
+                <span>Заканчивается срок использования промокода</span>
+                <span>12.06.2020</span>
+            </li>
+            <li class="um-content-notifications__item">
+                <i class="icon-um-mail"></i>
+                <span>Заканчивается срок использования промокода</span>
+                <span>12.06.2020</span>
+            </li>
+            <li class="um-content-notifications__item">
+                <i class="icon-um-mail"></i>
+                <span>Заканчивается срок использования промокода</span>
+                <span>12.06.2020</span>
+            </li>
+        </ul>
+
+        <div class="um-uved-tabs__content um-content-reminders um-uved-tabs__um-content-reminders" data-tabs-target="reminders">
+
+            <p class="um-content-reminders__text">Добавьте Событие в календарь, а мы Вам о нём напомним. Так вы не забудете поздравить с днём рождения своих близких, и другие важные мероприятия.</p>
+
+            <ul class="um-content-reminders__list">
+                <li class="um-block-reminders um-content-reminders__item">
+                    <ul class="um-block-reminders__list">
+                        <li class="um-block-reminders__item">22.11.2021</li>
+                        <li class="um-block-reminders__item">08:00</li>
+                        <li class="um-block-reminders__item">День рождения мамы</li>
+                    </ul>
+                    <button class="um-block-reminders__btn um-uved-btn-popup" data-tabs-path="popup-add">
+                        <i class="icon-um-edit"></i>
+                        <span class="visually-hidden">Редактировать карточку</span>
+                    </button>
+                </li>
+                <li class="um-block-reminders um-content-reminders__item">
+                    <ul class="um-block-reminders__list">
+                        <li class="um-block-reminders__item">22.11.2021</li>
+                        <li class="um-block-reminders__item">08:00</li>
+                        <li class="um-block-reminders__item">День рождения мамы</li>
+                    </ul>
+                    <button class="um-block-reminders__btn um-uved-btn-popup" data-tabs-path="popup-add">
+                        <i class="icon-um-edit"></i>
+                        <span class="visually-hidden">Редактировать карточку</span>
+                    </button>
+                </li>
+                <li class="um-block-reminders um-content-reminders__item">
+                    <ul class="um-block-reminders__list">
+                        <li class="um-block-reminders__item">22.11.2021</li>
+                        <li class="um-block-reminders__item">08:00</li>
+                        <li class="um-block-reminders__item">День рождения мамы</li>
+                    </ul>
+                    <button class="um-block-reminders__btn um-uved-btn-popup" data-tabs-path="popup-add">
+                        <i class="icon-um-edit"></i>
+                        <span class="visually-hidden">Редактировать карточку</span>
+                    </button>
+                </li>
+            </ul>
+            
+            <button class="um-content-reminders__btn-edit um-uved-btn-popup" data-tabs-path="popup-add">
+                <i class="icon-um-plus"></i>
+                <span>Добавить Событие</span>
+            </button>
+        </div>
+
+        <div class="um-popup-reminders" data-tabs-target="popup-add">
+            <h4 class="um-popup-reminders__head-title">&#8211; Добавить Событие</h4>
+            <form class="um-popup-reminders__form" action="#">
+                <label class="um-popup-reminders__label">
+                    <span class="um-popup-reminders__title">Дата</span>
+                    <input class="um-popup-reminders__input" type="text" id="airdatepicker-um-uved-tabs">
+                    <span class="um-popup-reminders__btn-сalendar">
+                        <i class="icon-um-calendar"></i>
+                    </span>
+                </label>
+                <label class="um-popup-reminders__label">
+                    <span class="um-popup-reminders__title">Время напоминания</span>
+                    <input class="um-popup-reminders__input" type="text">
+                </label>
+                <label class="um-popup-reminders__label">
+                    <span class="um-popup-reminders__title">Название</span>
+                    <input class="um-popup-reminders__input" type="text">
+                </label>
+                <label class="um-popup-reminders__label">
+                    <span class="um-popup-reminders__title">Место</span>
+                    <input class="um-popup-reminders__input" type="text">
+                </label>
+                <button class="um-popup-reminders__btn-send" type="submit">Сохранить</button>
+            </form>
+            <button class="um-popup-reminders__btn-close">
+                <i class="icon-um-city-close"></i>
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </div>
+
+    </div>
+    <script src="js/um-js/air-datepicker.js"></script>
+    <script src="js/um-js/um-uved-tabs.js"></script>
+</body>
+</html>

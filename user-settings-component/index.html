@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение стилей слайдера -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <!-- подключение стилей блока -->
+    <link rel="stylesheet" href="css/um-popup-city.css">
+    <link rel="stylesheet" href="css/um-user-settings.css">
+</head>
+<body>
+    <!-- Секция редактировать профиль -->
+    <section class="umsp-block">
+        <!-- Блок информация пользователя -->
+        <div class="umsp-user-info umsp-block__umsp-user-info">
+
+            <button class="umsp-btn-edit umsp-block__umsp-btn-edit" onclick="document.querySelector('#umspPopapEditor').style.display = 'flex'">
+                <span class="visually-hidden">Редактировать профиль</span>
+                <i class="icon-um-edit"></i>
+            </button>  
+
+            <div class="umsp-user-photo umsp-user-info__umsp-user-photo">
+                
+                <picture >
+                    <img class="umsp-user-photo__img" src="img/png/photo-profil-plug.png" alt="фото"/>
+                </picture>
+
+                <button class="umsp-user-photo__btn">
+                    <span class="visually-hidden">Загрузить фото</span>
+                    <i class="icon-um-photo"></i>
+                </button>
+
+            </div>
+
+            <div class="umsp-user-info__wrap">
+                <div class="umsp-user-info__user-name">Иванов Иван Иванович</div>
+
+                <div class="umsp-user-data umsp-user-info__umsp-user-data">
+                    <ul class="umsp-user-data__list">
+                        <li class="umsp-user-data__item umsp-user-data__item-title">Телефон</li>
+                        <li class="umsp-user-data__item umsp-user-data__item-text">+79999999</li>
+                    </ul>
+                    <ul class="umsp-user-data__list">
+                        <li class="umsp-user-data__item umsp-user-data__item-title">Email</li>
+                        <li class="umsp-user-data__item umsp-user-data__item-text umsp-user-data__item-text--line">kizhukova@gmail.com</li>
+                    </ul>
+                    <ul class="umsp-user-data__list">
+                        <li class="umsp-user-data__item umsp-user-data__item-title">Дата рождения</li>
+                        <!-- Если есть дата рождения необходимо убрать класс umsp-user-data__item-text--add-text-->
+                        <li class="umsp-user-data__item umsp-user-data__item-text umsp-user-data__item-text--add-text">не указана</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- Блок социальных сетей -->
+        <div class="umsp-user-social umsp-block__umsp-user-social">
+            <h3 class="umsp-user-social__title">Привязать социальные сети</h3>
+            <p class="umsp-user-social__text">Вы можете привязать свои социальные сети, нажав на иконку. Это даст возможность авторизации с помощью социальных сетей, а так же ускорит процесс оформления заказа с мощью социальных сетей</p>
+            <ul class="umsp-user-social__list">
+                <li class="umsp-user-social__item">
+                    <!-- При активации соц. сети добавляется класс umsp-user-social__link--activ-vk -->
+                    <a class="umsp-user-social__link" href="#">
+                        <i class="umsp-user-social__icon icon-um-vk"></i>
+                        <span class="visually-hidden">Вконтакте</span>
+                    </a>
+                </li>
+                <li class="umsp-user-social__item">
+                    <!-- При активации соц. сети добавляется класс umsp-user-social__link--activ-cs -->
+                    <a class="umsp-user-social__link" href="#">
+                        <i class="umsp-user-social__icon icon-um-classmates"></i>
+                        <span class="visually-hidden">Одноклассники</span>
+                    </a>
+                </li>
+                <li class="umsp-user-social__item">
+                    <!-- При активации соц. сети добавляется класс umsp-user-social__link--active-tm -->
+                    <a class="umsp-user-social__link" href="#">
+                        <i class="umsp-user-social__icon icon-um-telegram"></i>
+                        <span class="visually-hidden">Телеграм</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="umsp-user-adress umsp-block__umsp-user-address">
+            <h3 class="umsp-user-adress__title">Адреса</h3>
+            <p class="umsp-user-adress__text-main">г. Москва, ул. Тимирязевская, д.14, офис 56</p>
+            <p class="umsp-user-adress__text">г. Москва, Ленинградское шоссе, д.258, кв. 15</p>
+            <button class="umsp-user-adress__btn"  onclick="document.querySelector('#umspPopupAddAddress').style.display = 'block'">Добавить адрес</button>
+        </div>
+
+        <button class="umsp-btn-delet umsp-block__umsp-btn-delet" onclick="document.querySelector('#umspPopupDelet').style.display = 'block'">Удалить профиль</button>
+
+    </section>
+
+    <!-- попап редактирование -->
+    <section class="umsp-block__umsp-popap-editor umsp-popap-editor" id="umspPopapEditor">
+
+        <button class="umsp-btn-edit umsp-block__umsp-btn-edit umsp-btn-edit--active" onclick="document.querySelector('#umspPopapEditor').style.display = 'none'">
+            <span class="visually-hidden">Редактировать профиль</span>
+            <i class="icon-um-edit"></i>
+        </button>  
+
+        <div class="umsp-user-photo umsp-user-info__umsp-user-photo">
+            
+            <picture >
+                <img class="umsp-user-photo__img" src="img/png/photo-profil-plug.png" alt="фото"/>
+            </picture>
+
+            <button class="umsp-user-photo__btn">
+                <span class="visually-hidden">Загрузить фото</span>
+                <i class="icon-um-photo"></i>
+            </button>
+
+        </div>
+
+        <div class="umsp-user-info__wrap">
+            <div class="umsp-user-info__user-name">Иванов Иван Иванович</div>
+
+            <form class="umsp-popap-editor__form">
+                <div class="umsp-popap-editor__wrap">
+                    <label class="umsp-popap-editor__item">
+                        <span class="umsp-popap-editor__title">Телефон</span>
+                        <input class="umsp-popap-editor__input" type="tel">
+                    </label>
+                    <label class="umsp-popap-editor__item">
+                        <span class="umsp-popap-editor__title">Email</span>
+                        <input class="umsp-popap-editor__input" type="email">
+                    </label>
+                </div>
+                <label class="umsp-popap-editor__item">
+                    <span class="umsp-popap-editor__title">Дата рождения</span>
+                    <div class="umsp-popap-editor__wrpa-calendar">
+                        <!-- Тут не доделан календарь, при нажатие нажатие на кнопку будет сплывать окно с выбором даты  -->
+                        <input class="umsp-popap-editor__input-calendar" type="text" placeholder="не указана" id="airdatepicker" value="">
+                        <button class="umsp-popap-editor__btn-calendar">
+                            <i class="icon-um-calendar"></i>
+                            <span class="visually-hidden">Выбрать дату</span>
+                        </button>
+                    </div>
+                    <span class="umsp-popap-editor__title">Введите дату рождения, чтобы мы могли Вас поздравить</span>
+                </label>
+
+                <button class="umsp-popap-editor__btn-save" type="submit">сохранить</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- попап удалить страницу -->
+    <section class="umsp-popup-delet" id="umspPopupDelet">
+        <h2 class="visually-hidden">Удалить профиль</h2>
+        <p class="umsp-popup-delet__text">Как только Ваш профиль будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.</p>
+        <button class="umsp-popup-delet__btn-delet">Удалить профиль</button>
+        <button class="umsp-popup-delet__btn-close" onclick="document.querySelector('#umspPopupDelet').style.display = 'none'">
+            <i class="icon-um-city-close"></i>
+            <span class="visually-hidden">Закрыть</span>
+        </button>
+    </section>
+
+    <!-- попап добавить адрес -->
+    <section class="umsp-popup-add-address" id="umspPopupAddAddress">
+        <h2 class="visually-hidden">Добавить адрес</h2>
+        <button class="umsp-popup-delet__btn-close" onclick="document.querySelector('#umspPopupAddAddress').style.display = 'none'">
+            <i class="icon-um-city-close"></i>
+            <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="umsp-popup-add-address__form" action="#">
+            <label class="umsp-popup-add-address__item">
+                <span class="umsp-popup-add-address__title">Город</span>
+                <input class="umsp-popup-add-address__input" type="text" placeholder="Москва">
+            </label>
+            <label class="umsp-popup-add-address__item">
+                <span class="umsp-popup-add-address__title">Адрес </span>
+                <input class="umsp-popup-add-address__input" type="text" placeholder="ул. Тимирязевская, д. 15, стр 1, кв 30">
+            </label>
+            <label class="umsp-popup-add-address__item">
+                <input class="umsp-popup-add-address__checkbox" type="checkbox">
+                <span class="umsp-popup-add-address__icon-checkbox"></span>
+                <span class="umsp-popup-add-address__title">Основной адрес</span>
+            </label>
+            <button class="umsp-popup-add-address__btn-save">Сохранить</button>
+        </form>
+    </section>
+    
+
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/um-app.js"></script>
+</body>
+</html>
+

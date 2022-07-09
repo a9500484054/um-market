@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <!-- <link rel="stylesheet" href="css/um-style/um-product.css"> -->
+    <link rel="stylesheet" href="css/um-style/um-cms.css">
+</head>
+<body>
+    <div class="um-create-site">
+
+        <h3 class="um-create-site__title">Создать сайт</h3>
+
+        <div class="um-create-site__wrapp">
+            <!-- Меню Создать сайт -->
+            <div class="um-menu-create-site">
+                <ul class="um-menu-create-site__list">
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Мой сайт</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link um-menu-create-site__link--active" href="#">Главное</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Домен</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Контакты</a></li>
+                    <li class="um-menu-create-site__item"><a class="um-menu-create-site__link" href="#">Стиль</a></li>
+                </ul>
+            </div>
+
+            <div class="um-content-create-site">
+
+                <form class="um-form-create-site" action="#" id="test">
+                    <label class="um-form-create-site__label">
+                        <span class="um-form-create-site__text">Название сайта<span class="um-form-create-site__asterisk">&#42;</span></span>
+                        <input class="um-form-create-site__input" type="text" placeholder="Название Компании" required>
+                    </label>
+                    <label class="um-form-create-site__label">
+                        <span class="um-form-create-site__text">Описание сайта<span class="um-form-create-site__asterisk">&#42;</span></span>
+                        <input class="um-form-create-site__input" type="text" placeholder="Самая лучшая Компания">
+                    </label>
+                    <label class="um-form-create-site__label">
+                        <span class="um-form-create-site__text">Субдомен на unitedmarket<span class="um-form-create-site__asterisk">&#42;</span></span>
+                        <input class="um-form-create-site__input" type="text" placeholder="http://yoursite.unitedmarket.org">
+                    </label>
+                    <label class="um-form-create-site__label">
+                        <span class="um-form-create-site__text">Логотип комапании<span class="um-form-create-site__asterisk">&#42;</span></span>
+                        <input class="um-form-create-site__input-file" type="file" placeholder="Выбрать файл">
+                        <span class="um-form-create-site__icon-download">
+                            <span>Выбрать файл</span>
+                            <i class="icon-um-download"></i>
+                        </span>
+                    </label>
+                    <button class="um-form-create-site__btn um-button-create-site" type="submit">Cохранить</button>
+                </form>
+                
+            </div>
+        </div> 
+
+    </div>
+    <script src="test.js"></script> 
+</body>
+</html>

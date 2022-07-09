@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение стилей слайдера -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <!-- подключение стилей блока -->
+    <link rel="stylesheet" href="css/um-popup-city.css">
+</head>
+<body>
+
+    <section class="umcity-popup" id="cityWindow">
+
+        <!-- кнопка закрытия попапа-->
+        <div class="umcity-popup__wrap-btn-close">
+            <button class="umcity-popup__btn-close" onclick="document.querySelector('#cityWindow').style.display = 'none'">
+                <i class="icon-um-city-close"></i>
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </div>
+
+        <!-- Блок выбраного города -->
+        <div class="umcity-popup__wrap-my-city">
+            <span class="umcity-popup__name-city">Ваш город:</span>
+            <span class="umcity-popup__name-city">Санкт-Петербург</span>
+        </div>
+
+        <!-- форма поиска города-->
+        <div class="umcity-popup__wrap-search">
+            <input class="umcity-popup__search" id="citySearch" type="text" placeholder="Начните вводить ваш город">
+            <button class="umcity-popup__search-btn">
+                <span class="visually-hidden">Поиск</span>
+                <i class="icon-um-city-searh"></i>
+            </button>
+        </div>
+
+        <!-- Список популярных городов, в виде слайдера, после разрешения 768px пропадает-->
+        <div class="umcity-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">Москва</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item umcity-popular-city__item--active">Санкт-Петербург</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">Екатеринбург</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">Новосибирск</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">нижний новгород</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">казань</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">самара</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">омск</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">Уфа</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="umcity-popular-city__item">волгоград</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Список популярных городов, появляеться после разрешения 768px -->
+        <ul class="umcity-popular-city umcity-popup__popular-city">
+            <li class="umcity-popular-city__item">Москва</li>
+            <li class="umcity-popular-city__item umcity-popular-city__item--active">Санкт-Петербур</li>
+            <li class="umcity-popular-city__item">Екатеринбург</li>
+            <li class="umcity-popular-city__item">Новосибирск</li>
+            <li class="umcity-popular-city__item">нижний новгород</li>
+            <li class="umcity-popular-city__item">казань</li>
+            <li class="umcity-popular-city__item">самара</li>
+            <li class="umcity-popular-city__item">омск</li>
+            <li class="umcity-popular-city__item">Уфа</li>
+            <li class="umcity-popular-city__item">волгоград</li>
+        </ul>
+
+        <!-- Список городов -->
+        <div class="umcity-list-city umcity-popup__umcity-list-city">
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">A</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Архангельск</li>
+                    <li class="umcity-list-city__item">Астрахань</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">Б</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Балашиха</li>
+                    <li class="umcity-list-city__item">Барнаул</li>
+                    <li class="umcity-list-city__item">Белгород</li>
+                    <li class="umcity-list-city__item">Бийск</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">В</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Великий Новгород</li>
+                    <li class="umcity-list-city__item">Волгоград</li>
+                    <li class="umcity-list-city__item">Вологда
+                    </li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">Д</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Дедовск</li>
+                    <li class="umcity-list-city__item">Дзержинский</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">Е</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Архангельск</li>
+                    <li class="umcity-list-city__item">Архангельск</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">Г</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">екатеринбург</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">З</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Зеленоград</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">И</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Иваново</li>
+                    <li class="umcity-list-city__item">Ижевск</li>
+                    <li class="umcity-list-city__item">Иркутск</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">К</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Калининград</li>
+                    <li class="umcity-list-city__item">Киров</li>
+                    <li class="umcity-list-city__item">Ковров</li>
+                    <li class="umcity-list-city__item">Кострома</li>
+                    <li class="umcity-list-city__item">Красногорск</li>
+                    <li class="umcity-list-city__item">Краснодар</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">Л</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item">Липецк</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">М</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item umcity-list-city__item--strong">Москва</li>
+                    <li class="umcity-list-city__item">Магнитогорск</li>
+                    <li class="umcity-list-city__item">Миасс</li>
+                    <li class="umcity-list-city__item">Мурманск</li>
+                </ul>
+            </div>
+            <div class="umcity-list-city__m-item">
+                <span class="umcity-list-city__title">С</span>
+                <ul class="umcity-list-city__list">
+                    <li class="umcity-list-city__item umcity-list-city__item--active">Санкт-Петербург</li>
+                    <li class="umcity-list-city__item">Саранск</li>
+                    <li class="umcity-list-city__item">Самара</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- подключение слайдера -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- подключение слайдера -->
+    <script src="js/umcity-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <link rel="stylesheet" href="css/um-style/umdp-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/um-style/um-product.css">
+</head>
+<body>
+    <div class="um-product">
+        <div class="swiper um-product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source type="image/webp" srcset="images/img/webp/Product-card-1-1.webp"> 
+                        <img src="images/img/jpg/Product-card-1-1.jpg" alt="фото"/>
+                    </picture>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source type="image/webp" srcset="images/img/webp/Product-card-1-2.webp"> 
+                        <img src="images/img/jpg/Product-card-1-2.jpg" alt="фото"/>
+                    </picture>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source type="image/webp" srcset="images/img/webp/Product-card-1-3.webp"> 
+                        <img src="images/img/jpg/Product-card-1-3.jpg" alt="фото"/>
+                    </picture>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="um-product__wrap">
+
+            <ul class="um-product-preview">
+                <li class="um-product-preview__item">
+                    <picture>
+                        <source type="image/webp" srcset="images/img/webp/Product-card-1-1.webp"> 
+                        <img class="um-product-preview__img um-product-preview__img--active" data-tabs-path="Productcard11" src="images/img/jpg/Product-card-1-1.jpg" alt="фото"/>
+                    </picture>
+                </li>
+                <li class="um-product-preview__item" >
+                    <picture>
+                        <source type="image/webp" srcset="images/img/webp/Product-card-1-2.webp"> 
+                        <img class="um-product-preview__img" data-tabs-path="Productcard12" src="images/img/jpg/Product-card-1-2.jpg" alt="фото"/>
+                    </picture>
+                </li>
+                <li class="um-product-preview__item" >
+                    <picture>
+                        <source type="image/webp" srcset="images/img/webp/Product-card-1-3.webp"> 
+                        <img class="um-product-preview__img" data-tabs-path="Productcard13" src="images/img/jpg/Product-card-1-3.jpg" alt="фото"/>
+                    </picture>
+                </li>
+            </ul>
+
+            <div class="um-product-images">
+                <picture>
+                    <source type="image/webp" srcset="images/img/webp/Product-card-1-1-dest.webp"> 
+                    <img class="um-product-images__img um-product-images__img--active" data-tabs-target="Productcard11" src="images/img/jpg/Product-card-1-1-dest.jpg" alt="фото"/>
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="images/img/webp/Product-card-1-2-dest.webp"> 
+                    <img class="um-product-images__img" data-tabs-target="Productcard12" src="images/img/jpg/Product-card-1-2-dest.jpg" alt="фото"/>
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="images/img/webp/Product-card-1-3-dest.webp"> 
+                    <img class="um-product-images__img" data-tabs-target="Productcard13" src="images/img/jpg/Product-card-1-3-dest.jpg" alt="фото"/>
+                </picture>
+            </div>
+            
+        </div>
+        <div class="um-product-info">
+            <h2 class="um-product-info__title">21 Роза в крафте</h2>
+            <p class="um-product-info__text">Артикул: 4475177</p>
+
+            <div class="um-rating-product um-product-info__um-rating-product">
+                <ul class="um-rating-product__list">
+                    <li class="um-rating-product__item"><i class="icon-um-star-full"></i></li>
+                    <li class="um-rating-product__item"><i class="icon-um-star-full"></i></li>
+                    <li class="um-rating-product__item"><i class="icon-um-star-full"></i></li>
+                    <li class="um-rating-product__item"><i class="icon-um-star-none"></i></li>
+                    <li class="um-rating-product__item"><i class="icon-um-star-none"></i></li>
+                </ul>
+                <span class="um-rating-product__rating">4.8</span>
+                <a href="#" class="um-rating-product__reviews">(131 отзыв)</a>
+            </div>
+
+            <div class="um-price-product um-product-info__um-price-product">
+                <span class="um-price-product__price-new">2854 &#8381;</span>
+                <span class="um-price-product__price-old">3000 &#8381;</span>
+            </div>
+
+            <form class="um-feature-product um-product-info__um-feature-product" action="#">
+
+                <div class="um-flower-length-product">
+                    <h3 class="um-flower-length-product__title">Длина цветка, см</h3>
+                    <ul class="um-flower-length-product__list">
+                        <li class="um-flower-length-product__item">
+                            <label class="um-flower-length-product__label">
+                                <input class="um-flower-length-product__input" type="radio" name="flower-length"  value="40">
+                                <span class="um-flower-length-product__elem">40</span>
+                            </label>
+                        </li>
+                        <li class="um-flower-length-product__item">
+                            <label class="um-flower-length-product__label">
+                                <input class="um-flower-length-product__input" type="radio" name="flower-length"  value="50" checked>
+                                <span class="um-flower-length-product__elem">50</span>
+                            </label>
+                        </li>
+                        <li class="um-flower-length-product__item">
+                            <label class="um-flower-length-product__label">
+                                <input class="um-flower-length-product__input" name="flower-length" type="radio" name="radiobutton" value="60">
+                                <span class="um-flower-length-product__elem">60</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="um-color-product">
+                    <h3 class="um-color-product__title">Доступные цвета</h3>
+                    <ul class="um-color-product__list">
+                        <li class="um-color-product__item">
+                            <label class="um-color-product__label">
+                                <input class="um-color-product__input" type="radio" name="color" value="красный" checked>
+                                <span class="um-color-product__elem um-color-product__elem--red"><span class="visually-hidden">красный</span></span>
+                            </label>
+                        </li>
+                        <li class="um-color-product__item">
+                            <label class="um-color-product__label">
+                                <input class="um-color-product__input" type="radio" name="color" value="белый">
+                                <span class="um-color-product__elem um-color-product__elem--white"><span class="visually-hidden">белый</span></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="um-quantity-product">
+                    <h3 class="um-quantity-product__title">Количество:</h3>
+                    <div class="um-quantity-product__wrap">
+                        <button class="um-quantity-product__btn">
+                            <i class="icon-um-minus"></i>
+                            <span class="visually-hidden">убрать</span>
+                        </button>
+                        <span class="um-quantity-product__number">1</span>
+                        <button class="um-quantity-product__btn">
+                            <i class="icon-um-pluse3"></i>
+                            <span class="visually-hidden">Добавить</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="um-basket-product">
+                    <button class="um-basket-product__add-basket" type="button">
+                        <i class="icon-um-basket"></i>
+                        <span>Добавить в корзину</span>
+                    </button>
+                    <button class="um-basket-product__like" type="button">
+                        <i class="icon-um-like"></i>
+                        <span class="visually-hidden">Поставить лайк</span>
+                    </button>
+                </div>
+            </form>
+
+            <ul class="um-terms-product um-product-info__um-terms-product">
+                <li class="um-terms-product__item">
+                    <span class="um-terms-product__text">время доставки</span>
+                    <span class="um-terms-product__icon"><i class="icon-um-clock"></i>40 минут</span>
+                </li>
+                <li class="um-terms-product__item">
+                    <span class="um-terms-product__text">стоимость доставки</span>
+                    <span class="um-terms-product__icon"><i class="icon-um-car"></i>300&#8381;</span>
+                </li>
+                <li class="um-terms-product__item">
+                    <span class="um-terms-product__text">бонусы за покупку</span>
+                    <span class="um-terms-product__icon">28&#8381;</span>
+                </li>
+            </ul>
+
+            <p class="um-product-info__text">Продавец: ООО Кимчи</p>
+
+            <ul class="um-desc-btn-product">
+                <li class="um-desc-btn-product__item"><button class="um-desc-btn-product__btn um-desc-btn-product__btn--active" data-tabs-path="description-product">Описание</button></li>
+                <li class="um-desc-btn-product__item"><button class="um-desc-btn-product__btn" data-tabs-path="features-product">Характеристики</button></li>
+            </ul>
+
+            <div class="um-description-product um-features-desc-feat um-features-desc-feat--active " data-tabs-target="description-product">
+                <h3 class="um-description-product__title-h3">Описание</h3>
+                <h4 class="um-description-product__title-h4">О товаре</h4>
+                <p class="um-description-product__text">Очаровательный букет, созданный с любовью руками наших флористов, — это отличный подарок для ваших близких. Доставим в любой уголок вашего города!</p>
+            </div>
+
+            <div class="um-features-product um-features-desc-feat" data-tabs-target="features-product">
+                <h3 class="um-features-product__title-h3">Характеристики</h3>
+                <h4 class="um-features-product__title-h4">Состав</h4>
+                <ul class="um-features-product__list">
+                    <li class="um-features-product__item">
+                        <span class="um-features-product__elem">Роза красная</span>
+                        <span class="um-features-product__elem">21шт</span>
+                    </li>
+                    <li class="um-features-product__item">Упаковка крафт</li>
+                </ul>
+                <h4 class="um-features-product__title-h4">Параметры</h4>
+                <ul class="um-features-product__list">
+                    <li class="um-features-product__item">
+                        <span class="um-features-product__elem">Высота</span>
+                        <span class="um-features-product__elem">50см</span>
+                    </li>
+                    <li class="um-features-product__item">
+                        <span class="um-features-product__elem">Ширина</span>
+                        <span class="um-features-product__elem">50см</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/um-js/um-product-info.js"></script>
+</body>
+</html>

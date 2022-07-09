@@ -1,0 +1,100 @@
+.um-domain-create-site {
+    &__form {
+
+    }
+    &__info-list {
+        margin-top: 34px;
+    }
+    &__info-item {
+        position: relative;
+        max-width: 571px;
+        margin-bottom: 12px;
+        margin-left: 24px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #000000;
+        &::after {
+            content: "";
+
+            position:absolute;
+            left: -24px;
+            top: 7px;
+            display: block;
+            width: 10px;
+            height: 10px;
+
+            border-radius: 50px;
+            background: #3657C8;
+        }
+    }
+    &__text {
+        margin-top: 67px;
+        max-width: 571px;
+        margin-bottom: 59px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #0B1331
+    }
+    &__list {
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 74px;
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 19px;
+
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+
+            background-color: #3657C8;
+            border-radius: 50px;
+        }
+
+        h3 {
+            width: 309px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.03em;
+            color: #0B1331;
+        }
+
+        p {
+            width: 309px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            color: #0B1331
+
+        }
+        &--arrow::before {
+            content: "";
+
+            position: absolute;
+            bottom: -67px;
+            left: 20px;
+
+            display: block;
+            width: 4px;
+            height: 56px;
+
+            background-image: url('../../images/img/svg/Arrow-bottom.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

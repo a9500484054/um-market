@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <!-- <link rel="stylesheet" href="css/um-style/um-product.css"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+
+    <div class="um-wamm">
+
+        <h1 class="um-wamm__title">Отправка сообщений в WAMM chat</span></h1>
+
+
+        <form class="um-wamm__form" action="#">
+            <label class="um-wamm__label">
+                <span class="um-wamm__label-text">Загрузите файл</span>
+                <input class="um-wamm__input-file" type="file" placeholder="Выбрать файл">
+                <span class="um-wamm__icon-download">
+                    <span>Выбрать файл</span>
+                    <i class="icon-um-download"></i>
+                </span>
+            </label>
+
+
+            <div class="um-wamm__wrapp">
+                <p class="um-wamm__text">Выберите шаблон сообщения или введите новый текст:<span class="um-wamm__asterisk"></span></p>
+                <label class="um-wamm__label">
+                    <span class="um-wamm__label-text">Введите новый текст</span>
+                    <input class="um-wamm__input" type="text" placeholder="Здравствуйте! Это цветочный магазин в">
+                </label>
+                <label class="um-wamm__label">
+                    <span class="um-wamm__text">Выберите шаблон сообщения<span class="um-wamm__asterisk"></span></span>
+                    <i class="icon-um-arrow"></i>
+                    <select class="um-wamm__input" placeholder="Здравствуйте! Это цветочный магазин в">
+                        <option selected disabled hidden>Здравствуйте! Это цветочный магазин в</option>
+                        <option>Здравствуйте! Это цветочный магазин в</option>
+                    </select>
+                </label>
+
+    
+                <label class="um-wamm__label">
+                    <span class="um-wamm__text">Введите город<span class="um-wamm__asterisk">&#42;</span></span>
+                    <i class="icon-um-arrow"></i>
+                    <select class="um-wamm__input" placeholder="ID торговой точки" required>
+                        <option selected disabled hidden>Москва</option>
+                        <option>Москва</option>
+                        <option>Москва</option>
+                        <option>Москва</option>
+                    </select>
+                </label>
+    
+            </div>
+
+
+            <button class="um-wamm__btn" type="submit">Отправить</button>
+        </form>
+
+
+        <div class="um-wamm-popap-sg">
+            <button class="m-wamm-popap-sg__close btn-close-js">
+                <span class="visually-hidden">Закрыть</span>
+                <i class="icon-um-city-close"></i>
+            </button>
+            <p class="m-wamm-popap-sg__text">Сообщение отправлено</p>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/um-js/um-investor-profile.js"></script> 
+</body>
+</html>

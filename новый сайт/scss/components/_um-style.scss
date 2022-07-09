@@ -1,0 +1,108 @@
+.um-style-form-create-site {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #0B1331;
+    }
+    &__label {
+        cursor: pointer;
+        margin-bottom: 55px;
+    }
+    &__wrap-radio {
+        display: flex;
+        align-items: center;
+        margin-bottom: 31px;
+    }
+    &__elem {
+        position: relative;
+        margin-right: 11px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #0B1331;
+        border-radius: 50px;
+        background-color: #fff;
+        &::before {
+            content: "";
+    
+            position: absolute;
+            top: 4px;
+            left: 4px;
+    
+            display: block;
+            width: 12px;
+            height: 12px;
+    
+            opacity: 0;
+            transition:  opacity .3s ease-in-out;
+
+            background-color: #3657C8;
+            border-radius: 50px;
+        }
+    }
+    &__radio {
+        display: none;
+        
+    }
+    &__radio:checked + &__elem::before {
+        opacity: 1;
+    }
+    &__number {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #0B1331;
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 23px;
+    }
+    &__item {
+        margin-right: 25px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    &__img {
+        margin-right: 18px;
+        width: 90px;
+        box-shadow: 4.97674px 4.97674px 24.8837px rgba(177, 177, 177, 0.25);
+    }
+    &__btn-wrap{
+        flex-basis: 100%;
+    }
+}
+
+.add-btn  {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #BFC6E0;
+    i {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .um-style-form-create-site {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__title {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+
+}

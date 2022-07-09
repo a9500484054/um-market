@@ -1,0 +1,60 @@
+// @import "./scss/fonts";
+// @import "./scss/libraries";
+@import "./scss/variables";
+// @import "./scss/mixins";
+// @import "./scss/base";
+
+@import "./scss/components/um-main";
+@import "./scss/components/um-form";
+@import "./scss/components/um-domain";
+@import "./scss/components/um-style";
+@import "./scss/components/um-pages";
+@import "./scss/components/um-setting-main";
+// @import "./scss/components/test";
+// @import "./scss/components/um-product-slider";
+// @import "./scss/components/um-description";
+// @import "./scss/components/um-benefits";
+// @import "./scss/components/um-feedback";
+
+.add-btn {
+    
+}
+
+.color-grey{
+    background-color: #949AA5;
+}
+.color-black{
+    background-color: #17181A;
+}
+.color-green{
+    background-color: #03C04F;
+}
+.color-light-grey{
+    background-color: #97A3AF;
+}
+.color-light-black{
+    background-color: #0B1331;
+}
+.color-orange{
+    background-color: #F46242;
+}
+.color-bold-grey{
+    background-color: #696969;
+}
+.color-bold-black{
+    background-color: #000000;
+}
+.color-blue{
+    background-color: #0066FF;
+}
+.color-dark-blue{
+    background-color: #3657C8;
+}
+.color-dark-grey{
+    background-color: #B0BFF0;
+}
+.color-light-blue{
+    background-color: #6ACDF8;
+}
+
+

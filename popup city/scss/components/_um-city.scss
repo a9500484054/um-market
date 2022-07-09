@@ -1,0 +1,203 @@
+.umcity-popup {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    left: 0;
+    width: 100%;
+    
+    max-width: 958px;
+    min-width: 360px;
+    margin: 0 auto;
+    padding: 20px 26px 64px;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    transition-duration: .5s;
+    overflow-x: hidden;
+    &__wrap-btn-close {
+        text-align: right;
+    }
+    &__btn-close {
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            color: #1F40B2;
+        }
+    }
+    &__wrap-my-city {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    &__name-city {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.0275em;
+
+        color: #1F40B2;
+
+    }
+    
+    &__wrap-search {
+        position: relative;
+        min-width: 260px;
+        width: 100%;
+        max-width: 448px;
+        margin-bottom: 26px;
+    }
+
+    &__search {
+        width: 100%;
+        padding: 20px 20px 15px;
+
+        background: #FFFFFF;
+        box-shadow: 4px 4px 10px #DFE2EE;
+        border-radius: 66px;
+    }
+
+    &__search-btn {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-size: 20px;
+    }
+
+    &__popular-city {
+
+    }
+    &__umcity-list-city {
+    }
+}
+
+.umcity-popular-city {
+    display: none;
+    margin-bottom: 46px;
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 8px 15px;
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 160%;
+
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #1F40B2;
+
+        box-shadow: 4px 4px 10px #DFE2EE;
+        border-radius: 66px;
+        margin-right: 20px;
+        transition-duration: .5s;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            color: #FFFFFF;
+            background-color: #1F40B2;
+        }
+        &:active {
+            color: #1F40B2;
+            background-color: #FFFFFF;
+        }
+
+    }
+    &__item--active {
+        color: #FFFFFF;
+        background-color: #1F40B2;
+    }
+}
+
+.umcity-list-city {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+
+    &__m-item {
+        display: flex;
+        flex-basis: 30%;
+        align-content:flex-end;
+
+    }
+
+    &__title {
+        margin-right: 7px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 160%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #3657C8;
+    }
+    &__item {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #0B1331;
+        transition-duration: .5s;
+        cursor: pointer;
+        &--active {
+            font-weight: 700;
+            color: #3657C8;
+        }
+        &--strong {
+            color: #0B1331;
+            font-weight: 700;
+        }
+        &:hover,
+        &:focus {
+            color: #3657C8;
+        }
+        &:active {
+            color: #0B1331;
+        }
+    }
+}
+
+.swiper-slide {
+    width: auto;
+}
+.umcity-swiper-container {
+    margin-bottom: 44px;
+}
+
+@media (min-width: $screen-table) {
+    .umcity-popup {
+        &__wrap-my-city {
+            flex-direction: row;
+        }
+
+        &__name-city {
+            margin-right: 5px;
+        }
+    }
+    .umcity-popular-city {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .umcity-swiper-container {
+        display: none;
+    }
+    .umcity-list-city {
+        width: 100%;
+        max-height: 379px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (min-width: $screen-desktop) {
+
+}

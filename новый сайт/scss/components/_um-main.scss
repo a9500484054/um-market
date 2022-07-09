@@ -1,0 +1,300 @@
+
+
+
+
+.um-create-site {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 50px;
+    &__title {
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0275em;
+        text-transform: uppercase;
+        color: #3657C8;
+    }
+    &__wrapp {
+        display: flex;
+    }
+}
+
+.um-menu-create-site {
+    position: fixed;
+    left: 4000px;
+    &__list {
+        width: 100px;
+    }
+    &__item {
+        margin-bottom: 29px;
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #0B1331;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            color:#3657C8;
+        }
+        &:active {
+            color:#0B1331;
+        }
+        &:hover > i,
+        &:focus > i {
+            color:#3657C8;
+        }
+        &:active > i{
+            color:#0B1331;
+        }
+    }
+    &__link--active {
+        color: #3657C8;
+    }
+}
+
+
+.um-content-create-site {
+    &__title {
+        max-width: 781px;
+        margin-bottom: 36px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #0B1331;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        margin-bottom: 24px;
+    }
+}
+.um-type-create-site {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 346px;
+    max-width: 421px;
+    height: 210px;
+    width: 100%;
+    padding: 116px 50px 5px 16px; 
+    border-radius: 12px;
+    overflow: hidden;
+    transition-duration: .5s;
+    &:hover > .um-type-create-site__elem,
+    &:focus > .um-type-create-site__elem {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    &:active {
+        opacity: .9;
+    }
+    &__elem {
+        position: absolute;
+        right: -20px;
+        top: -20px;
+
+        width: 106px;
+        height: 106px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        transition-duration: .5s;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        color: #BFC6E0;
+        box-shadow: -3px -2px 19px 0px #c4b794;
+        transform: rotate(180deg);
+        border-radius: 50px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.0275em;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF
+    }
+    &--bg-magenta {
+        background-color: #926CD0;
+        .um-type-create-site__elem {
+            background-color: #9D75DE; 
+        }
+        i {
+            box-shadow: -4px -3px 20px -9px #000;
+        }
+    }
+    &--bg-black {
+        background-color: #0B1331;
+                .um-type-create-site__elem {
+            background-color: #282F4A;
+        }
+        i {
+            box-shadow: -4px -3px 20px -9px #000;
+        }
+        
+    }
+    &--bg-green {
+        background-color: #80D9A1;        ;
+                .um-type-create-site__elem {
+            background-color: #76CA95;
+    
+        }
+        i {
+            box-shadow: -4px -3px 20px -9px #000;
+        }
+    }
+    &--bg-yellow {
+        background-color: #FAE174;
+                .um-type-create-site__elem {
+            background-color: #ECDB7B;
+        }
+        i {
+            box-shadow: -4px -3px 20px -9px #000;
+        }
+    }
+    &--bg-pink {
+        background-color: #DE75CD;
+                .um-type-create-site__elem {
+            background-color: #D357C0;
+        }
+        i {
+            box-shadow: -4px -3px 20px -9px #000;
+        }
+    }
+    &--bg-orange {
+        background-color: #ED954E;
+                .um-type-create-site__elem {
+            background-color:  #EF7F2B;
+        }
+        i {
+            box-shadow: -4px -3px 20px -9px #000;
+        }
+    }
+}
+
+.um-add-create-site {
+    &__text {
+        margin-bottom: 29px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: #0B1331
+    }
+}
+
+.text-color-black {
+    color: #0B1331;
+}
+
+.disabled-link {
+    pointer-events: none;
+    cursor: default;  
+    opacity: .5; 
+}
+
+.um-add-create-site--none {
+    display: none;
+}
+
+.um-button-create-site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 285px;
+    height: 68px;
+    background: #3657C8;
+    border-radius: 39px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    transition-duration: .5s;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color:#0B1331;
+    }
+    &:active {
+        color:#FFFFFF;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .um-create-site {
+        &__title {
+            margin-bottom: 27px;
+        }
+    }
+    .um-menu-create-site {
+        position: static;
+        width: 100px;
+    }
+    .um-content-create-site {
+        margin-left: 100px;
+        margin-top: -55px;
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 160%;
+        }
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__item:nth-child(odd) {
+            margin-right: 40px;
+        }
+    }
+    .um-type-create-site {
+        min-width: 346px;
+        max-width: 346px;
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .um-menu-create-site {
+        position: static;
+        width: 100px;
+    }
+
+    .um-content-create-site {
+        margin-left: 150px;
+        margin-bottom: 4px;
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+
+    .um-type-create-site {
+        min-width: 421px;
+        height: 164px;
+        padding-top: 70px;
+    }
+}

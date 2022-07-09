@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <!-- <link rel="stylesheet" href="css/um-style/um-product.css"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+
+    <div class="um-investor-profile">
+
+        <div class="um-investor-profile__um-breadcrumbs um-breadcrumbs">
+            <a href="https://umclone.pp.ua/" class="um-breadcrumbs__back-button">
+                <span class="visually-hidden">Закрыть</span>
+                <i class="icon-um-back"></i>
+            </a>
+            <ul class="um-breadcrumbs__list">
+                <li class="um-breadcrumbs__item"><a class="um-breadcrumbs__link" href="https://umclone.pp.ua/">Главная</a></li>
+                <li class="um-breadcrumbs__item">Анкетирование</li>
+            </ul>
+        </div>
+
+        <h1 class="um-investor-profile__title">Анкета <span class="nowrap">"Партнер United Market"</span></h1>
+
+        <p class="um-investor-profile__text">Уважаемый партнер United United, для рекламной компании Вашего интернет-магазина на нашем сервисе и получения взаимной выгоды мы привлекаем инвесторов для увеличения рекламного бюджета в Вашем городе. Для участия в маркетинговой программе ответьте, пожалуйста на вопросы в анкете для аналитики и повышения конкурентной и покупательской способности Вашего магазина.</p>
+
+        <form class="um-investor-profile__form" action="#">
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Город<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="Москва" required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Население города<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="Население города" required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Юридическое лицо<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="ИП Ромашкин А.В." required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Название магазина<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="Bloom" required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Адрес магазина<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="Коломенская, 20" required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Краткое описание магазина<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <span class="um-investor-profile__label-text-min">Количество флористов, их опыт, ассортимент магазина и т.д.</span>
+                <textarea class="um-investor-profile__textarea" placeholder="5 человек" required></textarea>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Телефон магазина<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="+79005555555" required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">С какого года (сколько лет) работает Ваш магазин<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="2007">
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Сайт магазина (при наличии)</span>
+                <input class="um-investor-profile__input" type="text" placeholder="https://gren-lavka.ru" >
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Товарооборот в месяц с сайта(при наличии)</span>
+                <input class="um-investor-profile__input" type="text" placeholder="100000">
+            </label>
+
+            <div class="um-investor-profile__label-text">Социальные сети (при наличии)</div>
+            <div class="um-investor-profile__social-wrap">
+                <label class="um-investor-profile__label-social">
+                    <span class="um-investor-profile__social-icon um-investor-profile__social-icon--fb"><i class="icon-um-fb"></i></span>
+                    <input class="um-investor-profile__input" type="text" placeholder="https://facebook.com/">
+                </label>
+                <label class="um-investor-profile__label-social">
+                    <span class="um-investor-profile__social-icon um-investor-profile__social-icon--telegram"><i class="icon-um-telegram"></i></span>
+                    <input class="um-investor-profile__input" type="text" placeholder="@nickname">
+                </label>
+                <label class="um-investor-profile__label-social">
+                    <span class="um-investor-profile__social-icon um-investor-profile__social-icon--inst"><i class="icon-um-inst"></i></span>
+                    <input class="um-investor-profile__input" type="text" placeholder="https://www.instagram.com">
+                </label>
+                <label class="um-investor-profile__label-social">
+                    <span class="um-investor-profile__social-icon um-investor-profile__social-icon--vk"><i class="icon-um-vk"></i></span>
+                    <input class="um-investor-profile__input" type="text" placeholder="https://vk.com/">
+                </label>
+                <label class="um-investor-profile__label-social">
+                    <span class="um-investor-profile__social-icon um-investor-profile__social-icon--classmates"><i class="icon-um-classmates"></i></span>
+                    <input class="um-investor-profile__input" type="text" placeholder="https://ok.ru/">
+                </label>
+            </div>
+
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Товарооборот в месяц с социальных сетей (при наличии)</span>
+                <input class="um-investor-profile__input" type="text" placeholder="100000">
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Товарооборот в месяц магазина</span>
+                <input class="um-investor-profile__input" type="text" placeholder="100000">
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Расходы магазина в месяц</span>
+                <input class="um-investor-profile__input" type="text" placeholder="20000">
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Сколько флористов работает, персонал<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="2" required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Арендуемая площадь, м2<span class="um-investor-profile__asterisk">&#42;</span></span>
+                <input class="um-investor-profile__input" type="text" placeholder="10" required>
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Стоимость аренды в месяц</span>
+                <input class="um-investor-profile__input" type="text" placeholder="20000">
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Система налогооблажения</span>
+                <input class="um-investor-profile__input" type="text" placeholder="ООО" >
+            </label>
+            <label class="um-investor-profile__label">
+                <span class="um-investor-profile__label-text">Фотографии магазина (5 фото)</span>
+                <input class="um-investor-profile__input-file" type="file" placeholder="Выбрать файл">
+                <span class="um-investor-profile__icon-download">
+                    <span>Выбрать файл</span>
+                    <i class="icon-um-download"></i>
+                </span>
+            </label>
+            <button class="um-investor-profile__btn" type="submit">Отправить</button>
+        </form>
+
+        <div class="um-investor-profile-popap-sg">
+            <button class="um-investor-profile-popap-sg__close btn-close-js">
+                <span class="visually-hidden">Закрыть</span>
+                <i class="icon-um-city-close"></i>
+            </button>
+            <p class="um-investor-profile-popap-sg__text">Спасибо! Скоро наши менеджеры свяжутся с вами</p>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/um-js/um-investor-profile.js"></script> 
+</body>
+</html>

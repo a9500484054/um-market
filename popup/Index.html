@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключение общих стилей -->
+    <link rel="stylesheet" href="css/um-style/um-main.css">
+    <!-- подключение иконочных шрифтов -->
+    <link rel="stylesheet" href="css/um-style/um-icon-style.css">
+    <link rel="stylesheet" href="css/um-style/umdp-style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <button class="um-js-get-popup">нажать 1</button>
+    <button class="um-js-get-popup">нажать 2</button>
+
+    <div class="franchise-um-popup franchise-um-popup-main">
+        <button class="franchise-um-popup__close">
+            <span class="visually-hidden">Закрыть</span>
+            <i class="icon-um-city-close"></i>
+        </button>
+        <p class="franchise-um-popup__title">Выберете вариант сотрудничества</p>
+        <ul class="franchise-um-popup__list" >
+            <li class="franchise-um-popup__item"><a class="franchise-um-popup__link one franchise-um-popup__link--active" href="#">Генеральный партнер</a></li>
+            <li class="franchise-um-popup__item"><a class="franchise-um-popup__link two" href="#">Партнер</a></li>
+        </ul>
+        <button class="franchise-um-popup__btn-next">Продолжить</button>
+    </div>
+
+    <div class="franchise-um-popup franchise-um-popup-gp fb-none">
+        <button class="franchise-um-popup__close">
+            <span class="visually-hidden">Закрыть</span>
+            <i class="icon-um-city-close"></i>
+        </button>
+        <p class="franchise-um-popup__title">Заявка на вариант сотрудничества Партнер и выставление счета</p>
+        <p class="franchise-um-popup__text"><span class="franchise-um-popup__elem franchise-um-popup__elem--active"></span>Выставить счет на оплату Сотрудничества</p>
+        <form action="#">
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">ФИО</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">ИНН</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">ОГРН</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">КПП</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">БИК</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">кор. счет №</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">счет №</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">Юридический адрес</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">Фактический адрес</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">Телефон</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <label class="franchise-um-popup__label">
+                <span class="franchise-um-popup__label-text">Email</span>
+                <input class="franchise-um-popup__input" type="text">
+            </label>
+            <button class="franchise-um-popup__btn-send">Отправить</button>
+        </form>
+    </div>
+
+    <div class="franchise-um-popup franchise-um-popup-p fb-none">
+        <button class="franchise-um-popup__close">
+            <span class="visually-hidden">Закрыть</span>
+            <i class="icon-um-city-close"></i>
+        </button>
+        <p class="franchise-um-popup__text">Если вы уже готовы к сотрудничеству, заполните реквизиты и мы выставим счет для оплаты паушального взноса</p>
+        <p class="franchise-um-popup__title">Выберете систему налогооблажения</p>
+        <ul class="franchise-um-popup__list-menu">  
+            <li class="franchise-um-popup__item-menu franchise-um-popup__item-menu--active" data-tabs-path="franchise-ooo">ООО</li>
+            <li class="franchise-um-popup__form" data-tabs-target="franchise-ooo">
+                <form action="#">
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сфера услуг/товаров: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Город</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Полное наименование организации: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сокращенное наименование: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Юридический адрес: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Фактический адрес: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Почтовый адрес (а/я): </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Генеральный Директор: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Главный бухгалтер: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">ИНН</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">КПП</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">ОГРН</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Наименование Банка: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Расчётный счет (р/с) : </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Корреспондентский счёт: (к/c) </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">БИК</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Электронный почтовый адрес (E-mail):</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Мобильный номер телефона:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сайт/соц.сети:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <button class="franchise-um-popup__btn-send">Отправить</button>
+                </form>
+            </li>
+            <li class="franchise-um-popup__item-menu" data-tabs-path="franchise-ip">ИП</li>
+            <li class="franchise-um-popup__form" data-tabs-target="franchise-ip">
+                <form action="#">
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сфера услуг/товаров: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Город</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Полное наименование организации: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сокращенное наименование: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Юридический адрес: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Фактический адрес: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Почтовый адрес (а/я): </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">ИНН</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">КПП</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">ОГРН</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Наименование Банка: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Расчётный счет (р/с) : </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Корреспондентский счёт: (к/c) </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">БИК</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Электронный почтовый адрес (E-mail):</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Мобильный номер телефона:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сайт/соц.сети:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <button class="franchise-um-popup__btn-send">Отправить</button>
+                </form>
+            </li>
+            <li class="franchise-um-popup__item-menu" data-tabs-path="franchise-self">Самозанятый</li>
+            <li class="franchise-um-popup__form" data-tabs-target="franchise-self">
+                <form action="#">
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сфера услуг/товаров: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Город</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">ФИО:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Серия и номер паспорта:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Когда и кем выдан:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Адрес регистрации:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Фактический адрес ведения деятельности: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">ИНН</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Почтовый адрес (а/я):</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Наименование Банка: </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Расчётный счет (р/с) : </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Корреспондентский счёт: (к/c) </span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">БИК</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Электронный почтовый адрес (E-mail):</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Мобильный номер телефона:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <label class="franchise-um-popup__label">
+                        <span class="franchise-um-popup__label-text">Сайт/соц.сети:</span>
+                        <input class="franchise-um-popup__input" type="text">
+                    </label>
+                    <button class="franchise-um-popup__btn-send">Отправить</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <div class="franchise-um-commission">
+        <h2 class="franchise-um-commission__title">Распределение комиссии с продаж</h2>
+        <p class="franchise-um-commission__text">United Market – открытая платформа, на которой все транзакции прозрачны</p>
+        <ul class="franchise-um-commission__list" >
+            <li class="franchise-um-commission__item"><button class="franchise-um-commission__link franchise-um-commission__link--active" data-tabs-path="commission-general-partner">Генеральный партнер</button></li>
+            <li class="franchise-um-commission__item"><button class="franchise-um-commission__link" data-tabs-path="commission-partner">Партнер</button></li>
+        </ul>
+        <div class="franchise-um-commission__content franchise-um-commission__content--active" data-tabs-target="commission-general-partner">
+            <picture>
+                <source type="image/webp" srcset="images/img/webp/commission-screen-general-partner-dest.webp" media="(min-width: 768px)">
+                <source type="image/webp" srcset="images/img/webp/commission-screen-general-partner-mob.webp"> 
+                <source srcset="images/img/jpg/commission-screen-general-partner-dest.jpg.jpg" media="(min-width: 768px)">
+                <img class="franchise-um-commission__img" src="images/img/jpg/commission-screen-general-partner-mob.jpg" alt="фото"/>
+            </picture>
+        </div>
+        <div class="franchise-um-commission__content" data-tabs-target="commission-partner">
+            <picture>
+                <source type="image/webp" srcset="images/img/webp/commission-screen-partner-dest.webp" media="(min-width: 768px)">
+                <source type="image/webp" srcset="images/img/webp/commission-screen-partner-mob.webp"> 
+                <source srcset="images/img/jpg/commission-screen-partner-dest.jpg" media="(min-width: 768px)">
+                <img class="franchise-um-commission__img" src="images/img/jpg/commission-screen-partner-mob.jpg" alt="фото"/>
+            </picture>
+        </div>
+    </div>
+
+
+
+    <script src="js/um-js/um-franchise-popup.js"></script>
+</body>
+</html>
